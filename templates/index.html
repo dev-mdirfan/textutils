@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Learn Templates</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% comment %} <p>lorem</p>
+        {{name}} from {{place}} {% endcomment %}
+        <h1>Texutils</h1>
+        <h2>Welcome to text analyzer !</h2>
+
+        <h3>Enter your text :</h3>
+        <from name='text' action='/removepunc' method='get'>
+            <textarea style='margin: 0px; width: 700px; height: 90px;'></textarea>
+            <button type='submit'>Analyze Text</button>
+        </form>
+        
+        <h2>Links :</h2>
+
+        <ul>
+            <li>Go to <a href="/webs">/webs<a> to see my favorite websites </li>
+            <li>Go to <a href="/removepunc">/removepunc<a> to Remove Punctuations </li>
+            <li>Go to <a href="/capitalize">/capitalize<a> to see Capitalize the latters </li>
+            <li>Go to <a href="/newlineremove">/newlineremove<a> to see New Line Remover </li>
+            <li>Go to <a href="/spaceremove">/spaceremove<a> to see Space Remover </li>
+            <li>Go to <a href="/charcount">/charcount<a> to see my count the character in paragraph </li>
+        </ul>
+        <script src="" async defer></script>
+    </body>
+</html>
