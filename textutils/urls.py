@@ -26,15 +26,29 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # creating new path for see string output
-    
     path('', views.index, name='index'),
-    path('about/', views.about, name='about'),
-    path('webs/', views.webs, name='webs'),
     
-    # Creating Pipeline
-    path('removepunc', views.removepunc, name='removepunc'),
-    path('capitalize', views.capitalize, name='capitalize'),
-    path('newlineremove', views.newlineremove, name='newlineremove'),
-    path('spaceremove', views.spaceremove, name='spaceremove'),
-    path('charcount', views.charcount, name='charcount')
+    # About page
+    path('about/', views.about, name='about'),
+    
+    # Exercises - 1
+    path('exercise1/', views.exercise1, name='exercise1'),
+    
+    # Exercises - 2
+    path('exercise2/', views.exercise2, name='exercise2'),
+    
+    # Pipe Line for textutils
+    path('home/', views.home, name='home'),
+    path('removepunc/', views.removepunc, name='removepunc'),
+    path('capitalize/', views.capitalize, name='capitalize'),
+    path('newlineremove/', views.newlineremove, name='newlineremove'),
+    path('spaceremove/', views.spaceremove, name='spaceremove'),
+    path('charcount/', views.charcount, name='charcount'),
+    
+    
+    # Actual code are here !
+    path('analyze', views.analyze, name='analyze'),
+    
+    
+    
 ]

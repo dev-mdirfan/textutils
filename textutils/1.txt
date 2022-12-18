@@ -1,3 +1,11 @@
-Welcome to My Notes
+<h1>Exercise : 1</h1>
 
-You can revise any time my notes.
+<h2>Question : Create a text file and render to a web page.</h2> 
+
+<p>Welcome!</p>
+<p>This is paragraph of the text file.</p>
+ 
+<p>Dummy Text</p>
+<br>
+<br>
+<a href="/">Back to Home Page</a>

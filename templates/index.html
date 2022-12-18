@@ -1,34 +1,67 @@
-<html>
+<html>  
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Learn Templates</title>
+        <title>Text Utils</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
         {% comment %} <p>lorem</p>
-        {{name}} from {{place}} {% endcomment %}
+        Variables params accessing from view.py
+        {{name}} from {{place}}
+        {% endcomment %}
+
         <h1>Texutils</h1>
         <h2>Welcome to text analyzer !</h2>
 
         <h3>Enter your text :</h3>
-        <from name='text' action='/removepunc' method='get'>
-            <textarea style='margin: 0px; width: 700px; height: 90px;'></textarea>
+        <form action='/analyze' method='get'>
+            <textarea name="text" style='margin: 0px; width: 700px; height: 90px;'></textarea>
+            <br>
+            <input type="checkbox" name="removepunc"> Remove Punctuations
+            <br>
+            <input type="checkbox" name="uppercase"> Upper Case
+            <br>
+            <input type="checkbox" name="newlineremove"> New Line Remove
+            <br>
+            <input type="checkbox" name="spaceremove"> Remove Spaces
+            <br>
+            <input type="checkbox" name="charcount"> Count the characters
+            <br>
+            <br>
             <button type='submit'>Analyze Text</button>
         </form>
         
-        <h2>Links :</h2>
+        <h2>Ohter Links :</h2>
 
         <ul>
-            <li>Go to <a href="/webs">/webs<a> to see my favorite websites </li>
-            <li>Go to <a href="/removepunc">/removepunc<a> to Remove Punctuations </li>
-            <li>Go to <a href="/capitalize">/capitalize<a> to see Capitalize the latters </li>
-            <li>Go to <a href="/newlineremove">/newlineremove<a> to see New Line Remover </li>
-            <li>Go to <a href="/spaceremove">/spaceremove<a> to see Space Remover </li>
-            <li>Go to <a href="/charcount">/charcount<a> to see my count the character in paragraph </li>
+            <li> <b>Go to Exercise 1 :</b><a href="/exercise1">/exercise1:<a> Render Text File </li> <br>
+            <li> <b>Go to Exercise 2 :</b><a href="/exercise2">/exercise2:<a> Personal Navigator </li> <br>
+            <li> <b>Go to Pipeline Structure :</b><a href="/home">/home:<a> Pipeline for textutils </li>
         </ul>
+
+        <h2> Text Examples<h2>
+        <h4>Remove Punctuations:</h4>
+        <pre><code>Please remo:::::::::;;''''?///''[]ve Punctuations.</code></pre>
+        <h4>Upper Case:</h4>
+        <pre><code>Convert this line into upper case.</code></pre>
+        <h4>New Line Remove:</h4>
+        <pre><code>
+            this
+            is
+            my
+            name:
+            Irfan
+        </code></pre>
+        <h4>Remove Space:</h4>
+        <pre><code>this is        my       web    si     te.<pre></code>
+        <h4>Charracter Count:</h4>
+        <pre><code>
+            Count the 12356 character
+            25676 in this line.</code></pre>
+
         <script src="" async defer></script>
     </body>
 </html>
